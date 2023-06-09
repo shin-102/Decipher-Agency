@@ -1,451 +1,374 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Marketing Agency Landing Page</title>
-  <link rel="stylesheet" href="decipher.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="decipher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<style>
-  @media only screen and (max-width: 767px){
-    #Home, #About, #Services, #Pricing, #Contact, #Footer {
-      width: 1000px;
-    }
-    .about-image{
-      width: 50%;
-      height: 60%;
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 2023px){
-    
-  }
-
-  @media only screen and (min-width: 1024px){
-    
-  }
-</style>
-
 <body>
-  <!--<header>
-    <nav class="navbar">
-      <ul class="navbar_items">
-        <li><a href="#">Home</a></li>
-        <li><a href="PGS/about.html">About</a></li>
-        <li><a href="PGS/services.html">Services</a></li>
-        <li><a href="PGS/price.html">Price</a></li>
-        <li><a href="PGS/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>-->
+    <style>
+        @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .decihero {
+        width: 120%;
+    }
+    .pikture {
+        width: 120%;
+        margin-bottom: 0;
+    }
+    .deciabout{
+        width: 120%;
+    }
+    .decifeat {
+        width: 120%;
+    }
+    .smgridview {
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0, 1fr));
+    }
+    .pricingplans{
+        flex-direction: column;
+        width: 80%;
+        margin-left: 0;
+    }
+    .pricingplans div{
+        width: 120%;
+        margin-bottom: 20px;
+    }
+    .pricingpacks {
+        padding: 0 40px 0 0;
+        margin-left: 50px;
+    }
+    .decifoot{
+        width: 120%;
+        padding-left: 10px;
+    }
+}
+    </style>
+    <nav class="navbg fixed w-full z-20 top-0 left-0 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="./Icons/DECI_LETTER-removebg-preview.png" class="h-10 mr-3" alt="DCFR">
+                <span class="self-center text-2xl  whitespace-nowrap dark:text-white" style="font-family: 'Bungee', cursive;">Decipher</span>
+            </a>
+            <div class="flex justify-center order-1 md:order-1">
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                        <a href="#Hero"
+                            class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#About"
+                            class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#Services"
+                            class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#Footer"
+                            class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md sm:hidden decitext decitexthov hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. -->
+                        <!--
+                            Heroicon name: menu
 
-  <main>
-    <section class="hero" id="Home">
-      <img src="IMG/DECIPHER LOGO ONLY(1).png" alt="Decipher Agency" class="animate__animated animate__fadeInDown" style="width: 220px; animation-duration: 1.5s;">
-      <h1 class="animate__animated animate__fadeInDown">DECIPHER</h1>
-      <div class="hero-text animate__animated animate__fadeInUp">
-        <p>Our complexity to your simplicity</p>
-        <!--<a href="#services" class="buttn">contact</a>-->
-      </div>
-    </section>
+                            Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <!-- Icon when menu is open. -->
+                        <!--
+                            Heroicon name: x
 
-    <section class="about" id="About">
-      <div class="about-text animate__animated animate__fadeInLeft">
-        <h2>About Us</h2>
-        <p>We are a digital marketing agency that specializes in helping businesses increase their online visibility and drive more sales through effective marketing strategies. Our team consists of experienced marketing professionals who are passionate about helping our clients succeed.</p>
-        <a href="#Contact" class="btton">Contact us</a>
-      </div>
-      <div style="width: 30%;" >
-        <!--<img class="about-image" src="IMG/About.png" alt="IMG">-->
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.304/build/spline-viewer.js"></script>
-        <spline-viewer class="about-image" url="https://prod.spline.design/rBIc60Nc60ObCowS/scene.splinecode"></spline-viewer>
-      </div>
-    </section>
-    
-    <section class="services" id="Services">
-      <h2 style="color:white;">Our Services</h2> 
-      <article class="service_grid">
-        <div class="grids AVP animate__animated animate__fadeIn">
-          <div class="grids_text">
-            <h2>Audio-Visual Production</h2>
-          </div>
+                            Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+            </div>
+            <button class="decibutton order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 "><a href="https://wa.me/212762861697">Get in touch</a></button>
+            </div>
+            <div class="hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#Hero"
+                        class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#About"
+                        class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#Services"
+                        class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                    <a href="#Footer"
+                        class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--*HERO SECTION*-->
+
+    <div class="decihero px-6 py-12 lg:my-12 text-gray-800 text-center lg:text-left" id="Hero">
+        <div class="container mx-auto xl:px-32">
+            <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+            <div class="mt-12 lg:mt-0">
+                <h1 class="decitext text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12">Are you ready <br /><span class="decispan">for an adventure?</span></h1>
+                <form action="mailto:decipher.agency@gmail.com" method="post" enctype="text/plain">
+                <div class="md:flex flex-row">
+                <input type="text" class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Tell us about your project" />
+                <button class="inline-block px-7 py-3 decibutton font-medium text-sm leading-snug uppercase rounded shadow-md  hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Contact</button>
+                </div>
+                </form>
+            </div>
+            <div class="bg-white mb-12 lg:mb-0 rounded-3xl">
+                <div
+                class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-3xl shadow-lg rounded flex justify-center"
+                >
+                <img src="./IMG/DECI_LETTER-removebg-preview.png" alt="DECIPHER LOGO" class="max-w-sm">
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
 
-        <div class="grids GD animate__animated animate__fadeIn">
-          <div class="grids_text">
-            <h2>Graphic Design</h2>
-          </div>
-        </div>
+        <!--* ABOUT SECTION *-->
+
+    <div class="container my-24 px-6 mx-auto" style="background-color: #FFFAFB ;">
+
+        <!-- Section: Design Block -->
+        <section class="mb-32">
+            <style>
+            @media (min-width: 992px) {
+                #cta-img-nml-50 {
+                margin-left: 50px;
+                }
+            }
+            </style>
         
-        <div class="grids SSM animate__animated animate__fadeIn">
-          <div class="grids_text">
-            <h2>Social Media Management</h2>
-          </div>
-        </div>
+            <div class="flex flex-wrap" id="About">
+            <div class="pikture grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0">
+                <div class="flex lg:py-12">
+                <img src="./IMG/programming-background-with-person-working-with-codes-computer.jpg" class="w-full rounded-lg shadow-lg"
+                    id="cta-img-nml-50" style="z-index: 10" alt="" />
+                </div>
+            </div>
         
-        <div class="grids WD animate__animated animate__fadeIn">
-          <div class="grids_text">
-            <h2>Web Development</h2>
-          </div>
+            <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12" >
+                <div
+                class="deciabout h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left">
+                <div class="lg:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Welcome to <span style="font-family: 'Bungee', cursive;">Decipher</span></h2>
+                    <p class="mb-6 pb-2 lg:pb-0">
+                        Your gateway to the dynamic world of digital marketing. We specialize in helping beginners and enthusiasts harness the power of digital marketing to achieve their goals.
+                    </p>
+        
+                    <div class="flex flex-col md:flex-row md:justify-around xl:justify-start mb-6 mx-auto">
+                    <p class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        <path fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                        </path>
+                        </svg>
+                        Consistency
+                    </p>
+        
+                    <p class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        <path fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                        </path>
+                        </svg>
+                        Flexibility
+                    </p>
+        
+                    <p class="flex items-center mb-2 lg:mb-0 mx-auto md:mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        <path fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                        </path>
+                        </svg>
+                        Transparency
+                    </p>
+                    </div>
+        
+                    <p>
+                        Digital marketing is the art and science of reaching, engaging, and influencing your target audience through various online channels. Whether you're a small business owner, an aspiring entrepreneur, or an established brand, our team of experts is here to guide you through the intricacies of this ever-evolving landscape. From search engine optimization (SEO) and social media marketing to content creation and data analytics, we offer a comprehensive suite of services tailored to your specific needs. Get ready to unlock the full potential of digital marketing and take your online presence to new heights with Decipher.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Section: Design Block -->
+        
         </div>
-      </article>
-      
-    </section>
+        <!-- Container for demo purpose -->
 
-    <section class="packages p-index" id="Pricing">
-      <h2 style="color:white;">Pricing plans</h2>
-      <main class="container">
-        <section class="buttons">
-            <button class="button active" data-target="div1">Startup</button>
-            <button class="button" data-target="div2">Standard</button>
-            <button class="button" data-target="div3">Advanced</button>
-            <button class="button" data-target="div4">Complex</button>
+        <!--* FEATURES AND SERVICES *-->
+
+        <section class="decifeat" id="Services">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">explore our <br> awesome <span class="underlinecolor">Services</span></h1>
+                
+                <p class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+                </p>
+                
+                <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 sm:grid-cols-1 smgridview">
+                    
+                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage1 "> 
+                        <svg class="h-10 w-10 text-white decicons"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <line x1="3.6" y1="9" x2="20.4" y2="9" />  <line x1="3.6" y1="15" x2="20.4" y2="15" />  <path d="M11.5 3a17 17 0 0 0 0 18" />  <path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                        <div class="bdrop">
+                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Web Development</h1>
+        
+                        <p class="decitext">
+                            Unlock your online potential with our expert web development solutions tailored to enhance user experience and drive conversions.
+                        </p>
+                        </div>
+                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </div>
+        
+                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage2">
+                        <svg class="h-10 w-10 text-white decicons" <svg  width="24"  height="24"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M12 19l7-7 3 3-7 7-3-3z" />  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />  <path d="M2 2l7.586 7.586" />  <circle cx="11" cy="11" r="2" /></svg>
+                        <div class="bdrop">
+                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Graphic Design</h1>
+        
+                        <p class="decitext">
+                            Transform your brand identity with captivating graphic design that communicates your message effectively and leaves a lasting impression.
+                        </p>
+                        </div>
+                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </div>
+        
+                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage3">
+                        <svg class="h-10 w-10 text-white decicons"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="16" height="16" rx="2" />  <line x1="8" y1="4" x2="8" y2="20" />  <line x1="16" y1="4" x2="16" y2="20" />  <line x1="4" y1="8" x2="8" y2="8" />  <line x1="4" y1="16" x2="8" y2="16" />  <line x1="4" y1="12" x2="20" y2="12" />  <line x1="16" y1="8" x2="20" y2="8" />  <line x1="16" y1="16" x2="20" y2="16" /></svg>
+                        <div class="bdrop">
+                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Visual Media Production</h1>
+        
+                        <p class="decitext">
+                            From compelling videos to stunning imagery, our visual media production service brings your brand story to life and captivates your audience.
+                        </p>
+                        </div>
+                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </div>
+
+                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage4">
+                        <svg class="h-10 w-10 text-white decicons"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />  <path d="M13 15v-6l3 4l3 -4v6" /></svg>
+                        <div class="bdrop">
+                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Social Media Management</h1>
+        
+                        <p class="decitext">
+                            Let us handle your social media presence with strategic planning, and engaging content to maximize your brand's reach and impact.
+                        </p>
+                        </div>
+                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="content animate__animated animate__flash">
 
-          <div id="div1" class="tab active-tab">
-            <article class="packs">
+        <section class="p-7">
+        <div class="container px-4 py-8">
+            <div class="flex mx-4 my-8 pricingplans">
+                <div class="w-3/5">
+                <h2 class="text-2xl font-bold">Choose a Plan</h2>
+                <div class="mt-4">
+                    <div class="flex ">
+                        <button class="tabs px-4 py-2 bg-gray-200 rounded-tl-lg rounded-bl-lg border-r-2 border-gray-300 hover:bg-gray-300 active:bg-gray-400">Start-up</button>
+                        <button class="tabs px-4 py-2 bg-gray-200 border-r-2 border-gray-300 hover:bg-gray-300 active:bg-gray-400">Standard</button>
+                        <button class="tabs px-4 py-2 bg-gray-200 border-r-2 border-gray-300 hover:bg-gray-300 active:bg-gray-400">Advanced</button>
+                        <button class="tabs px-4 py-2 bg-gray-200 rounded-tr-lg rounded-br-lg hover:bg-gray-300 active:bg-gray-400">Complex</button>
+                    </div>
+                    <div class="mt-4 w-4/5">
+                    <p id="description" class="text-gray-600">Select a plan to see its details.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="grid grid-cols-1 grid-rows-2 w-2/6 bg-gray-100 p-4 pricingpacks">
+                <div class="flex flex-col items-center" >
+                    <h3 id="heading" class="text-lg font-bold">Choose a plan</h3>
+                    <p id="price" class="text-2xl font-bold ">Pre-chosen prices</p>
+                </div>
+                <div class="py-5 flex items-end justify-center">
+                    <button class="decibutton order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Contact</button>
+                    <button class="decibutton ml-3 order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Learn More</button>
+                </div>
+                </div>
+            </div>
+        </div>
 
-              <div class="pack1">
-                <h1>Audio Visual Prod.</h1>
-                <ul>
-                  <li>8 pictures</li>
-                  <li>30 seconds Video</li>
-                  <li>Good Editing</li>
-                </ul>
-              </div>
-
-              <div class="pack2">
-                <h1>Graphic Design</h1>
-                <ul>
-                  <li>1 Design Concept</li>
-                  <li>Branding Retouch</li>
-                </ul>
-                <ul>
-                  <li>Social Media Kit</li>
-                  <li>Logo</li>
-                  <li>Business Card</li>
-                </ul>
-                <span><p>File Format: JPG, PNG and PDF</p></span>
-              </div>
-
-              <div class="pack3">
-                <h1>Social Media Management</h1>
-                <ul>
-                  <li>2 Platforms</li>
-                  <li>6 Total posts</li>
-                  <li>Customer Support</li>
-                </ul>
-                <ul class="span">
-                  <li><span>Ad Campaign</span></li>
-                  <li><span>Analytics Report</span></li>
-                </ul>
-              </div>
-
-              <div class="pack4">
-                <h1>Web Development</h1>
-                <ul>
-                  <li>Landing Page</li>
-                  <li>up to 3 pages</li>
-                  <li>Photos & Videos</li>
-                  <li>Contact & Map</li>
-                  <li>English/French</li>
-                  <li>Good Security</li>
-                </ul>
-                <ul class="span">
-                  <li><span>SEO optimization</span></li>
-                  <li><span>Mobile Responsive</span></li>
-                </ul>
-              </div>
-
-              <div class="pack5">
-                <!--<h2><span>6 250</span>MAD HT</h2>-->
-                <a href="#Contact" class="btton">Contact us</a>
-              </div>
-
-            </article>
-          </div>
-
-
-          <div id="div2" class="tab">
-            <article class="packs">
-
-              <div class="pack1">
-                <h1>Audio Visual Prod.</h1>
-                <ul>
-                  <li>15 pictures</li>
-                  <li>60 seconds Video</li>
-                  <li>High Editing</li>
-                </ul>
-              </div>
-
-              <div class="pack2">
-                <h1>Graphic Design</h1>
-                <ul>
-                  <li>2 Design Concept</li>
-                  <li>Branding Retouch</li>
-                </ul>
-                <ul>                  
-                  <li>Social Media Kit</li>
-                  <li>Logo</li>
-                  <li>Business Card</li>
-                  <li>Flyer</li>
-                </ul>
-                <span><p>File Format: JPG, PNG and PDF</p></span>
-              </div>
-
-              <div class="pack3">
-                <h1>Social Media Management</h1>
-                <ul>
-                  <li>2 Platforms</li>
-                  <li>12 Total posts</li>
-                  <li>Customer Support</li>
-                </ul>
-                <ul class="span">
-                  <li><span>Ad Campaign</span></li>
-                  <li><span>Analytics Report</span></li>
-                </ul>
-              </div>
-
-              <div class="pack4">
-                <h1>Web Development</h1>
-                <ul>
-                  <li>Business</li>
-                  <li>up to 5 pages</li>
-                  <li>Photos, Videos & Icons</li>
-                  <li>Contact & Map</li>
-                  <li>English/French</li>
-                  <li>Good Security</li>                  
-                </ul>
-                <ul class="span">
-                  <li><span>SEO optimization</span></li>
-                  <li><span>Mobile Responsive</span></li>
-                </ul>
-              </div>
-
-              <div class="pack5">
-                <!--<h2><span>12 500</span>MAD HT</h2>-->
-                <a href="#Contact" class="btton">Contact us</a>
-              </div>
-
-            </article>
-          </div>
-
-          <div id="div3" class="tab">
-            <article class="packs">
-
-              <div class="pack1">
-                <h1>Audio Visual Prod.</h1>
-                <ul>
-                  <li>20 pictures</li>
-                  <li>60 seconds Video</li>
-                  <li>2 Reels</li>
-                  <li>High Editing</li>
-                </ul>
-              </div>
-              <div class="pack2">
-                <h1>Graphic Design</h1>
-                <ul>
-                  <li>2 Design Concept</li>
-                  <li>Branding Retouch</li>
-                </ul>
-                <ul>                  
-                  <li>Web Design</li>
-                  <li>Social Media Kit</li>
-                  <li>Logo</li>
-                  <li>Business Card</li>
-                  <li>Flyer</li>                  
-                </ul>
-                <span><p>File Format: JPG, PNG and PDF</p></span>
-              </div>
-
-              <div class="pack3">
-                <h1>Social Media Management</h1>
-                <ul>
-                  <li>3 Platforms</li>
-                  <li>24 Total posts</li>
-                  <li>Customer Support</li>
-                </ul>
-                <ul class="span">
-                  <li><span>Ad Campaign</span></li>
-                  <li><span>Analytics Report</span></li>
-                </ul>
-              </div>
-
-              <div class="pack4">
-                <h1>Web Development</h1>
-                <ul>
-                  <li>E-commerce</li>
-                  <li>up to 7 pages</li>
-                  <li>Photos, Videos & Icons</li>
-                  <li>Contact, Map & API</li>
-                  <li>English/French</li>
-                  <li>High Security</li>                  
-                </ul>
-                <ul class="span">
-                  <li><span>SEO optimization</span></li>
-                  <li><span>Mobile Responsive</span></li>
-                </ul>
-              </div>
-
-              <div class="pack5">
-                <!--<h2><span>24 000</span>MAD HT</h2>-->
-                <a href="#Contact" class="btton">Contact us</a>
-              </div>
-
-            </article>
-          </div>
-
-          <div id="div4" class="tab">
-            <article class="packs">
-
-              <div class="pack1">
-                <h1>Audio Visual Prod.</h1>
-                <ul>
-                  <li>30 pictures</li>
-                  <li>60 seconds Video</li>
-                  <li>3 Reels</li>
-                  <li>Highest Editing</li>
-                </ul>
-              </div>
-
-              <div class="pack2">
-                <h1>Graphic Design</h1>
-                <ul>
-                  <li>3 Design Concept</li>
-                  <li>Branding Retouch</li>
-                </ul>
-                <ul>
-                  <li>Web Design</li>
-                  <li>Social Media Kit</li>
-                  <li>Logo</li>
-                  <li>Business Card</li>
-                  <li>Flyer</li>
-                </ul>
-                <span><p>File Format: JPG, PNG and PDF</p></span>
-              </div>
-
-              <div class="pack3">
-                <h1>Social Media Management</h1>
-                <ul>
-                  <li>4 Platforms</li>
-                  <li>36 Total posts</li>
-                  <li>Customer Support</li>
-                </ul>
-                <ul class="span">
-                  <li><span>Ad Campaign</span></li>
-                  <li><span>Analytics Report</span></li>
-                </ul>
-              </div>
-
-              <div class="pack4">
-                <h1>Web Development</h1>
-                <ul>
-                  <li>Web Application</li>
-                  <li>up to 10 pages</li>
-                  <li>Photos, Videos, Icons & SVG</li>
-                  <li>Contact, Map & API</li>
-                  <li>English/French</li>
-                  <li>High Security</li>
-                </ul>
-                <ul class="span">
-                  <li><span>SEO optimization</span></li>
-                  <li><span>Mobile Responsive</span></li>
-                </ul>
-              </div>
-
-              <div class="pack5">
-                <!--<h2><span>42 000</span>MAD HT</h2>-->
-                <a href="#Contact" class="btton">Contact us</a>
-              </div>
-            </article>
-          </div>
         </section>
-      </main>
-      <script>
-        // Get all buttons
-        const buttons = document.querySelectorAll('.button');
-        // Get all content tabs
-        const tabs = document.querySelectorAll('.tab');
-        // Loop through all buttons
-        buttons.forEach(button => {
-          // Add event listener for each button
-          button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            buttons.forEach(btn => {
-              btn.classList.remove('active');
-            });
-            // Add active class to clicked button
-            this.classList.add('active');
-            // Get the data-target value of the clicked button
-            const target = this.getAttribute('data-target');
-            // Loop through all tabs
-            tabs.forEach(tab => {
-              // Remove active-tab class from all tabs
-              tab.classList.remove('active-tab');
-              // If the tab's id matches the clicked button's data-target value
-              if (tab.id === target) {
-                // Add active-tab class to the matching tab
-                tab.classList.add('active-tab');
-              }
-            });
-          });
-        });
-      </script>
-    </section>
 
-    <section class="contact" id="Contact">
-      <div class="contact-form">
-        <form action="mailto:decipher.agency@gmail.com" method="post" enctype="text/plain">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+    <footer class="decifoot" id="Footer">
+        <div class="container mx-auto py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+            <!-- Left column with logo and social media icons -->
+            <div class="flex items-center justify-center mb-4">
+                <img src="./Icons/DECI_LETTER-removebg-preview.png" alt="Logo" class="logofoot">
+            </div>
+            <div class="flex items-center justify-center space-x-4">
+                <!--?FACEBOOK?-->
+                <a href="https://www.facebook.com/profile.php?id=100091253156930" class="group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 transition-colors duration-300 group-hover:bg-white">
+                        <svg class="h-8 w-8 text-white hover:text-blue-600"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                    </div>
+                </a>
+                <!--?IG?-->
+                <a href="https://www.instagram.com/decipher.agency/" class="group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-500 transition-colors duration-300 group-hover:bg-white">
+                        <svg class="h-8 w-8 text-white hover:text-pink-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                    </div>
+                </a>
+                <!--?LINKEDIN?-->
+                <a href="https://www.linkedin.com/company/decipher-agency" class="group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-900 transition-colors duration-300 group-hover:bg-white">
+                        <svg class="h-8 w-8 text-white hover:text-blue-900"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
+                    </div>
+                </a>
+            </div>
+            </div>
+            <div>
+            <!-- Middle column with texts and links -->
+            <h3 class="text-lg font-bold mb-4">Useful Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-200 hover:text-white">About Us</a></li>
+                <li><a href="#" class="text-gray-200 hover:text-white">Services</a></li>
+                <li><a href="#" class="text-gray-200 hover:text-white">FAQ</a></li>
+                <li><a href="#" class="text-gray-200 hover:text-white">Contact Us</a></li>
+            </ul>
+            </div>
+            <div>
+            <!-- Right column with form -->
+            <h3 class="text-lg font-bold mb-4">Reach us for a discussion</h3>
+            <form action="mailto:decipher.agency@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-4">
+                <input type="text" placeholder="Name" class="form-control block px-2 py-1 mb-2 md:mb-0 md:mr-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                <input type="email" placeholder="Email" class="form-control block px-2 py-1 mb-2 md:mb-0 md:mr-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                </div>
+                <button class="decibutton order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Email</button>
+                <a href="https://wa.me/212762861697" class="bg-green-500 text-white hover:bg-green-700 order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Whatsapp</a>
+            </form>
+            </div>
+        </div>
+        <div class="mt-8 text-center">
+            <p class="text-sm">© 2023 Decipher Sarl. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send Email</button>
-          <a href="https://wa.me/212762861697" class="wtsp">Whatsapp</a>
-        </form>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <section class="footer" id="Footer">
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-icons">
-        <h3>Follow Us</h3>
-        <ul class="social-icons">
-          <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-          <li><a href="https://www.linkedin.com/company/decipher-agency"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/decipher.agency/"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p>Email: decipher.agency@gmail.com
-          <br> Phone: +(212)76-286-1697 
-        </p>
-      </div>
-    </section>
-    <!--&copy; 2023 DECIPHER : Digital Marketing Agency. All rights reserved.-->
-  </footer>
+    <!--* SCRIPT *-->
+    <script src="./JS/main.js"></script>
 </body>
 </html>
