@@ -57,28 +57,44 @@
 
 /**FEAT**/
 .bgimage1{
-    background-image: url(./IMG/programming-background-with-person-working-with-codes-computer.jpg);
+    background-image: url(./IMG/WDev.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bgimage2{
-    background-image: url(./IMG/young-woman-working-animation-studio.jpg);
+    background-image: url(./IMG/DGra.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bgimage3{
-    background-image: url(./IMG/man-filming-with-professional-camera.jpg);
+    background-image: url(./IMG/VMed.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bgimage4{
-    background-image: url(./IMG/l-intro-1636036029.jpg);
+    background-image: url(./IMG/SMMgmt.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.bgimage1:hover{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-out;
+}
+.bgimage2:hover{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-out;
+}
+.bgimage3:hover{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-out;
+}
+.bgimage4:hover{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-out;
 }
 .bdrop{
     background-color: rgba(255, 255, 255, 0.2);
