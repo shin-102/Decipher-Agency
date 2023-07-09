@@ -1,69 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decipher Agency</title>
+    <title>Decipher Agency | B2B Digital Marketing for Business Owners</title>
 
+    <meta name="description" content="Promote your business with cost-flexible digital marketing solutions. We offer web development, graphic design, social media management, and visual media production. Contact us for adaptable strategies tailored to your budget and quality expectations.">
+
+    <link rel="icon" type="image/x-icon" href="./IMG/favicon.ico">
     <link rel="stylesheet" href="decipher.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Decipher Agency",
+            "url": "https://decipher-agency.github.io/Decipher-Agency/",
+            "logo": "https://decipher-agency.github.io/Decipher-Agency/logo.png",
+            "description": "Promote your business with cost-flexible digital marketing solutions.",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=100091253156930",
+                "https://www.instagram.com/decipher.agency/"
+            ],
+            "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+212762861697",
+                "contactType": "customer support"
+            }
+            ]
+        }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!--<style>
-        @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .pikture {
-        width: 120%;
-        margin-bottom: 0;
-    }
-    .deciabout{
-        width: 120%;
-    }
-    .decifeat {
-        width: 120%;
-    }
-    .smgridview {
-        display: grid;
-        grid-template-columns: repeat(1,minmax(0, 1fr));
-    }
-    .pricing{
-        margin-left: 25%;
-        width: 120%;
-    }
-    .decifoot{
-        width: 120%;
-        padding-left: 10px;
-    }
-    .Presentation{
-        width: 120%;
-    }
-    .FEATURES{
-        width: 120%;
-    }
-        } 
-    </style> -->
-    <nav class="navbg fixed w-full z-20 top-0 left-0 ">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center">
+    <header class="navbg fixed w-full z-20 top-0 left-0 ">
+        <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a title="Home page" href="#Hero" class="flex items-center">
                 <img src="./Icons/DECI_LETTER-removebg-preview.png" class="h-10 mr-3" alt="DCFR">
                 <span class="self-center text-2xl  whitespace-nowrap dark:text-white" style="font-family: 'Bungee', cursive;">Decipher</span>
             </a>
             <div class="flex justify-center order-1 md:order-1">
                 <div class="hidden sm:block md:block sm:ml-6">
                     <div class="flex space-x-4">
-                        <a href="#Hero"
+                        <a title="Hero Section" href="#Hero"
                             class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#About"
+                        <a title="About Section" href="#About"
                             class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#Services"
+                        <a title="Services and Features Section" href="#Services"
                             class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                        <a href="#Prices"
+                        <a title="Pricing Section" href="#Prices"
                             class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prices</a>
-                        <a href="#Footer"
+                        <a title="Footer and Contact Section" href="#Footer"
                             class="decitext decitexthov hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
@@ -96,30 +89,30 @@
                     </button>
             </div>
             <button class="decibutton order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 "><a href="https://wa.me/212762861697">Get in touch</a></button>
-            </div>
-            <div class="hidden" id="mobile-menu">
+            </nav>
+            <nav class="hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#Hero"
+                    <a title="Hero Section" href="#Hero"
                         class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="#About"
+                    <a title="About Section" href="#About"
                         class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="#Services"
+                    <a title="Services and Features Section" href="#Services"
                         class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                    <a href="#Prices"
+                    <a title="Pricing Section" href="#Prices"
                         class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prices</a>
-                    <a href="#Footer"
+                    <a title="Footer and Contact Section" href="#Footer"
                         class="decitext decitexthov hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </header>
+<main>
         <!--*HERO SECTION*-->
         
 
-    <div class="decihero px-6 py-24 w-screen mt-12 text-gray-800 text-center lg:text-left" id="Hero">
+    <article class="decihero px-6 py-24 w-screen mt-12 text-gray-800 text-center lg:text-left" id="Hero">
         <div class="container lg:mx-auto xl:px-32">
             <div class="grid lg:grid-cols-2 gap-12 flex items-center">
-            <div class="lg:mt-12 lg:mt-0">
+            <section class="lg:mt-12 lg:mt-0">
                 <h1 class="decitext text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12">Are you ready <br /><span class="decispan">for an adventure?</span></h1>
                 <form action="mailto:decipher.agency@gmail.com" method="post" enctype="text/plain">
                 <div class="md:flex flex-row">
@@ -127,32 +120,32 @@
                 <button class="inline-block px-7 py-3 decibutton font-medium text-sm leading-snug uppercase rounded shadow-md  hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Contact</button>
                 </div>
                 </form>
-            </div>
-            <div class="bg-white mb-12 lg:mb-0 rounded-3xl">
+            </section>
+            <aside class="bg-white mb-12 lg:mb-0 rounded-3xl">
                 <div
                 class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-3xl shadow-lg rounded flex justify-center"
                 >
                 <img src="./IMG/DECI_LETTER-removebg-preview.png" alt="DECIPHER LOGO" class="max-w-sm">
                 </div>
-            </div>
+            </aside>
             </div>
         </div>
-        </div>
+        </article>
 
         <!--* ABOUT SECTION *-->
 
-    <section class="relative w-screen" id="About">
-        <div class="absolute inset-0 bg-cover bg-blur" style="background-image: url('./IMG/light-blue-3d-abstract-wave-pattern.jpg');">
-        </div>
-        <div class="relative container mx-auto px-4 py-16 text-white text-center">
+    <article class="relative w-screen" id="About">
+        <aside class="absolute inset-0 bg-cover bg-blur" style="background-image: url('./IMG/light-blue-3d-abstract-wave-pattern.jpg');">
+        </aside>
+        <section class="relative container mx-auto px-4 py-16 text-white text-center">
             <h2 class="text-4xl font-bold mb-4">Welcome to <span style="font-family: 'Bungee', cursive;">Decipher</span></h2>
             <p class="text-xl mb-8">Your gateway to the dynamic world of digital marketing. We specialize in helping beginners and enthusiasts harness the power of digital marketing to achieve their goals.</p>
             <!--<a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full uppercase font-semibold">Learn More</a>-->
-        </div>
-    </section>
+        </section>
+    </article>
 
 
-    <div class="container w-screen mt-20 mb-10 px-6 mx-auto" style="background-color: #FFFAFB ;">
+    <article class="container w-screen mt-20 mb-10 px-6 mx-auto" style="background-color: #FFFAFB ;">
 
         <!-- Section: Design Block -->
         <section>
@@ -168,7 +161,7 @@
             <div class="pikture grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0">
                 <div class="flex lg:py-12">
                 <img src="./IMG/digital-marketing-with-icons-business-people.jpg" class="w-full rounded-lg shadow-lg"
-                    id="cta-img-nml-50" style="z-index: 10" alt="" />
+                    id="cta-img-nml-50" style="z-index: 10" alt="Digital Marketing B2B" />
                 </div>
             </div>
         
@@ -187,16 +180,16 @@
         </section>
         <!-- Section: Design Block -->
         
-        </div>
+        </article>
         <!-- Container for demo purpose -->
 
         <!--* FEATURES AND SERVICES *-->
 
         
-        <div class="w-screen flex md:flex-row flex-col-reverse md:items-stretch items-center justify-center mb-10">
-            <div class="md:py-20 xl:w-1/2 sm:w-1/2 lg:mr-20 md:mr-6 flex flex-col md:items-end items-center justify-center xl:mr-28">
+        <article class="w-screen flex md:flex-row flex-col-reverse md:items-stretch items-center justify-center mb-10">
+            <section class="md:py-20 xl:w-1/2 sm:w-1/2 lg:mr-20 md:mr-6 flex flex-col md:items-end items-center justify-center xl:mr-28">
                 <div class="flex flex-col items-center justify-center">
-                    <h1 class="md:text-5xl text-3xl font-bold text-center text-gray-800 ">Why us ?</h1>
+                    <h2 class="md:text-5xl text-3xl font-bold text-center text-gray-800 ">Why us ?</h2>
                     <div class="md:mt-14 mt-12 flex flex-col items-center">
                         <div class="w-20 h-20 deciabout shadow rounded-full flex items-center justify-center" role="img" aria-label="money">
                             <ion-icon class="h-10 w-10 text-white"  width="20" height="20" name="sync-circle-outline"></ion-icon>
@@ -216,17 +209,17 @@
                         <p class="text-base leading-6 mt-6 text-center text-gray-600  sm:w-96 w-full">Flexibility</p>
                     </div>
                 </div>
-            </div>
-            <div class="py-12 xl:w-1/2 lg:w-1/3 sm:w-1/2">
-                <img src="./IMG/quality-assurance-clipboard-icon.jpg" alt="image ow a woman studying" class="h-full rounded-md object-cover object-center md:block hidden" />
-                <img src="./IMG/quality-assurance-clipboard-icon.jpg" alt="image ow a woman studying" class="h-auto w-auto md:hidden block" />
-            </div>
-        </div>
+            </section>
+            <aside class="py-12 xl:w-1/2 lg:w-1/3 sm:w-1/2">
+                <img src="./IMG/quality-assurance-clipboard-icon.jpg" alt="Quality Check" class="h-full rounded-md object-cover object-center md:block hidden" />
+                <img src="./IMG/quality-assurance-clipboard-icon.jpg" alt="Quality Check" class="h-auto w-auto md:hidden block" />
+            </aside>
+        </article>
     
 
-        <section class="decifeat w-screen" id="Services">
-            <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl sm:text-center">Explore our <br> awesome <span class="underlinecolor">Services</span></h1>
+        <article class="decifeat w-screen" id="Services">
+            <section class="container px-6 py-10 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl sm:text-center">Explore our <br> awesome <span class="underlinecolor">Services</span></h2>
                 <!--
                 <p class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
@@ -234,65 +227,65 @@
                 
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-2 smgridview">
                     
-                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage1 "> 
+                    <section class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage1 "> 
                         <ion-icon class="h-8 w-8 text-white decicons"  width="20" height="20" name="globe-outline"></ion-icon>
                         <div class="bdrop">
-                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Web Development</h1>
+                        <h3 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Web Development</h3>
         
                         <p class="decitext">
                             Unlock your online potential with our expert web development solutions tailored to enhance user experience and drive conversions.
                         </p>
                         </div>
-                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
-                    </div>
+                        <!--?<a title="subpage" href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </section>
         
-                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage2">
+                    <section class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage2">
                         <ion-icon class="h-8 w-8 text-white decicons"  width="20" height="20" name="brush-outline"></ion-icon>
                         <div class="bdrop">
-                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Graphic Design</h1>
+                        <h3 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Graphic Design</h3>
         
                         <p class="decitext">
                             Transform your brand identity with captivating graphic design that communicates your message effectively and leaves a lasting impression.
                         </p>
                         </div>
-                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
-                    </div>
+                        <!--?<a title="subpage" href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </section>
         
-                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage3">
+                    <section class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage3">
                         <ion-icon class="h-8 w-8 text-white decicons"  width="20" height="20" name="aperture-outline"></ion-icon>
                         <div class="bdrop">
-                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Visual Media Production</h1>
+                        <h3 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Visual Media Production</h3>
         
                         <p class="decitext">
                             From compelling videos to stunning imagery, our visual media production service brings your brand story to life and captivates your audience.
                         </p>
                         </div>
-                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
-                    </div>
+                        <!--?<a title="subpage" href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </section>
 
-                    <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage4">
+                    <section class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl bgimage4">
                         <ion-icon class="h-8 w-8 text-white decicons"  width="20" height="20" name="share-social-outline"></ion-icon>
                         <div class="bdrop">
-                        <h1 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Social Media Management</h1>
+                        <h3 class="text-2xl text-gray-700 capitalize dark:text-white" style="font-family: 'Bungee', cursive;">Social Media Management</h3>
         
                         <p class="decitext">
                             Let us handle your social media presence with strategic planning, and engaging content to maximize your brand's reach and impact.
                         </p>
                         </div>
-                        <!--?<a href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
-                    </div>
+                        <!--?<a title="subpage" href="#" class="inline-flex float-right p-1 decibutton capitalize transition-colors duration-200 transform rounded-full "> <svg class="h-7 w-7 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" /></svg></a>-->
+                    </section>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
 
-        <section class="pricing w-screen" id="Prices">
-        <div class="bg-white py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <article class="pricing w-screen" id="Prices">
+        <section class="bg-white py-24 sm:py-32">
+            <section class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Find your suitable <span class="underlinecolor">Plan</span></h2>
                 <!--<p class="mt-6 text-lg leading-8 text-gray-600">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>-->
             </div>
-            <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+            <section class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                 <div class="p-8 sm:p-10 lg:flex-auto">
                 <h3 class="text-2xl font-bold tracking-tight text-gray-900">Choose your plan</h3>
                 <div class="flex justify-center items-center mt-4">
@@ -312,7 +305,7 @@
                 <div class="mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                 <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                     <div class="mx-auto max-w-xs px-8">
-                    <p id="heading" class="text-base font-semibold text-gray-600">Plan</p>
+                    <h2 id="heading" class="text-base font-semibold text-gray-600">Plan</h2>
                     <p class="mt-6 flex items-baseline justify-center gap-x-2">
                         <span id="price" class="text-5xl font-bold tracking-tight text-gray-900">Price</span>
                         <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">MAD / HT</span>
@@ -322,63 +315,63 @@
                     </div>
                 </div>
                 </div>
-            </div>
-            </div>
-        </div>
+            </section>
+            </section>
+        </section>
         
 
 
-        </section>
-
+        </article>
+    </main>
     <footer class="decifoot w-screen" id="Footer">
         <div class="container mx-auto py-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 ml-4 md:ml-0 lg:ml-0">
-            <div>
+            <section>
             <!-- Left column with logo and social media icons -->
-            <div class="flex items-center justify-center mb-4">
+            <aside class="flex items-center justify-center mb-4">
                 <img src="./Icons/DECI_LETTER-removebg-preview.png" alt="Logo" class="logofoot">
-            </div>
-            <div class="flex items-center justify-center space-x-4">
+            </aside>
+            <section class="flex items-center justify-center space-x-4">
                 <!--?FACEBOOK?-->
-                <a href="https://www.facebook.com/profile.php?id=100091253156930" class="group">
+                <a title="Facebook Profile Link" href="https://www.facebook.com/profile.php?id=100091253156930" class="group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 transition-colors duration-300 group-hover:bg-white">
                         <svg class="h-8 w-8 text-white hover:text-blue-600"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
                     </div>
                 </a>
                 <!--?IG?-->
-                <a href="https://www.instagram.com/decipher.agency/" class="group">
+                <a title="Instagram Profile Link" href="https://www.instagram.com/decipher.agency/" class="group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-500 transition-colors duration-300 group-hover:bg-white">
                         <svg class="h-8 w-8 text-white hover:text-pink-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                     </div>
                 </a>
                 <!--?LINKEDIN?-->
-                <a href="https://www.linkedin.com/company/decipher-agency" class="group">
+                <a title="Linkedin Profile Link" href="https://www.linkedin.com/company/decipher-agency" class="group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-900 transition-colors duration-300 group-hover:bg-white">
                         <svg class="h-8 w-8 text-white hover:text-blue-900"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
                     </div>
                 </a>
-            </div>
-            </div>
-            <div>
+            </section>
+            </section>
+            <section>
             <!-- Middle column with texts and links -->
             <h3 class="text-lg font-bold mb-4">Useful Links</h3>
             <ul class="space-y-2">
-                <li><a href="#" class="text-gray-200 hover:text-white">About Us</a></li>
-                <li><a href="#" class="text-gray-200 hover:text-white">Services</a></li>
-                <li><a href="#" class="text-gray-200 hover:text-white">FAQ</a></li>
-                <li><a href="#" class="text-gray-200 hover:text-white">Contact Us</a></li>
+                <li><a title="About us section" href="#" class="text-gray-200 hover:text-white">About Us</a></li>
+                <li><a title="Service section" href="#" class="text-gray-200 hover:text-white">Services</a></li>
+                <li><a title="Question and Answers section" href="#" class="text-gray-200 hover:text-white">FAQ</a></li>
+                <li><a title="Contact section" href="#" class="text-gray-200 hover:text-white">Contact Us</a></li>
             </ul>
-            </div>
-            <div>
+            </section>
+            <section>
                 <!-- Middle column with texts and links -->
                 <h3 class="text-lg font-bold mb-4">Contact us later</h3>
                 <ul class="space-y-2">
-                    <li><p class="underlinecolor">Call:</p><a href="tel:+212762861697" class="text-gray-200 hover:text-white">0762-86-1697</a></li>
-                    <li><p class="underlinecolor">Email:</p><a href="mailto:decipher.agency@gmail.com" class="text-gray-200 hover:text-white">decipher.agency@gmail.com</a></li>
-                    <li><p class="underlinecolor">Adresse:</p><a href="https://goo.gl/maps/yRbBZFeBE4KUaHsm7" class="text-gray-200 hover:text-white">23, Rue Anoual, Immeuble Fleury 11, bureau N:4 - Mimousa - Kenitra</a></li>
+                    <li><p class="underlinecolor">Call:</p><a title="Phone number contact" href="tel:+212762861697" class="text-gray-200 hover:text-white">0762-86-1697</a></li>
+                    <li><p class="underlinecolor">Email:</p><a title="email contact" href="mailto:decipher.agency@gmail.com" class="text-gray-200 hover:text-white">decipher.agency@gmail.com</a></li>
+                    <li><p class="underlinecolor">Adresse:</p><a title="address or location" href="https://goo.gl/maps/yRbBZFeBE4KUaHsm7" class="text-gray-200 hover:text-white">23, Rue Anoual, Immeuble Fleury 11, bureau N:4 - Mimousa - Kenitra</a></li>
                 </ul>
-                </div>
-            <div>
+                </section>
+            <section>
             <!-- Right column with form -->
             <h3 class="text-lg font-bold mb-4">Reach us now</h3>
             <form action="mailto:decipher.agency@gmail.com" method="post" enctype="text/plain">
@@ -389,13 +382,13 @@
                 <input type="email" placeholder="Email" class="form-control block px-2 py-1 mb-2 md:mb-0 md:mr-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
                 </div>
                 <button class="decibutton order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Email</button>
-                <a href="https://wa.me/212762861697" class="bg-green-500 text-white hover:bg-green-700 order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Whatsapp</a>
+                <a title="Whatsapp contact" href="https://wa.me/212762861697" class="bg-green-500 text-white hover:bg-green-700 order-2  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Whatsapp</a>
             </form>
-            </div>
+            </section>
         </div>
-        <div class="mt-8 text-center">
+        <section class="mt-8 text-center">
             <p class="text-sm">© 2023 Decipher Sarl. All rights reserved.</p>
-        </div>
+        </section>
         </div>
     </footer>
 
