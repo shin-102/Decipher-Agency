@@ -10,3 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   menu.classList.toggle("hidden");
   });
 });
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('ani'); //ani is the "show" class
+    } else {
+      entry.target.classList.remove('ani');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.unani'); //unani is the "hidden" class
+hiddenElements.forEach((el) => observer.observe(el));
+
