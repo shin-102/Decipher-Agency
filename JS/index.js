@@ -26,3 +26,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.unani'); //unani is the "hidden" class
 hiddenElements.forEach((el) => observer.observe(el));
 
+//*ABOUT SECTION CAROUSEL
+
+
+
